@@ -35,7 +35,11 @@ if(files.image){
     copyFileSync(files.image.path, path.join(__dirname, '../uploads', files.image.name));
     res.end(JSON.stringify(newTaks))
 }
-
+exports.updateTask = (req, res) => {
+    res.end(JSON.stringify({
+        message: 'Not yet implemented'
+    }))
+}
 
 
 
