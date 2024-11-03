@@ -25,7 +25,6 @@ const newTaks = {
     description: fields.description,
     status: fields?.status || 'pending',
     image:files.image ? `/upload/${files.image.name}` : null,
-
 }
 tasks.push(newTaks);
 
@@ -40,7 +39,11 @@ exports.updateTask = (req, res) => {
         message: 'Not yet implemented'
     }))
 }
-
+exports.deleteTask = (req, res) => {
+    res.end(JSON.stringify({
+        message: 'Not yet implemented'
+    }))
+}
 
 
 }
